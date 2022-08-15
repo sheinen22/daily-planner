@@ -1,7 +1,16 @@
 var currentDay = moment().format("dddd, MMMM Do");
 $("#currentDay").text(currentDay);
 
-var saveBtn = document.querySelector(".saveBtn");
+var saveBtn0 = document.querySelector(".saveBtn0");
+var saveBtn1 = document.querySelector(".saveBtn1");
+var saveBtn2 = document.querySelector(".saveBtn2");
+var saveBtn3 = document.querySelector(".saveBtn3");
+var saveBtn4 = document.querySelector(".saveBtn4");
+var saveBtn5 = document.querySelector(".saveBtn5");
+var saveBtn6 = document.querySelector(".saveBtn6");
+var saveBtn7 = document.querySelector(".saveBtn7");
+var saveBtn8 = document.querySelector(".saveBtn8");
+var saveBtn9 = document.querySelector(".saveBtn9");
 function saveInput(event){
     var input = event.target.attributes[0].value;
     var input2 = $("." + input).val();
@@ -18,4 +27,13 @@ $(".three").val(localStorage.getItem("three"))
 $(".four").val(localStorage.getItem("four"))
 $(".five").val(localStorage.getItem("five"))
 
-saveBtn.addEventListener("click", saveInput)
+saveBtn0.addEventListener("click", saveInput)
+saveBtn1.addEventListener("click", saveInput)
+saveBtn2.addEventListener("click", saveInput)
+saveBtn3.addEventListener("click", saveInput)
+saveBtn4.addEventListener("click", saveInput)
+saveBtn5.addEventListener("click", saveInput)
+saveBtn6.addEventListener("click", saveInput)
+saveBtn7.addEventListener("click", saveInput)
+saveBtn8.addEventListener("click", saveInput)
+saveBtn9.addEventListener("click", saveInput)
