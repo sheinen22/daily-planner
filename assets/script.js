@@ -37,3 +37,5 @@ saveBtn6.addEventListener("click", saveInput)
 saveBtn7.addEventListener("click", saveInput)
 saveBtn8.addEventListener("click", saveInput)
 saveBtn9.addEventListener("click", saveInput)
+
+//for loop for checking the time on the planner vs the current time and use the .addClass function to set the color scheme accordingly.  preset classes are past, future and present
