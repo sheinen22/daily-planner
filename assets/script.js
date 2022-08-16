@@ -45,13 +45,13 @@ var currentTime = moment().format("H");
 for (let i = 0; i < plannerHours.length; i++) {
     var currentHour = plannerHours[i];
     var plannerTime = currentHour.outerText;
-    var compareTime = moment(plannerTime, "h").format("h")
+    var compareTime = moment(plannerTime, "h").format("h");
 
     if (currentTime > compareTime) {
-        //add class past
+        document.querySelector(".row").classList.add("past");
     } else if (currentTime < compareTime) {
-        //add class future
+        document.querySelector(".row").classList.add("future");
     } else {
-        //add class present
+        document.querySelector(".row").classList.add("present")
     }
 }
